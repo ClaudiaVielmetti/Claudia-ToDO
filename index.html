@@ -36,7 +36,25 @@
         <main>
           <section id="appArea">
               <!--Start of the App-->
+              <div class=""wrapper>
+
+              <!--Task input field-->
+                <div class="task-input">
+                  <img src="./assets/Images/notes.svg" width="20" height="20" alt="icon-text">
+                  <input type="text" placeholder="Add a task!" id="taskInput">
+                  <p id="taskNameError" class="d-none errorMsg">You forgot to enter your task!</p>
+                </div>
+              </div>
+
+              <!--Calender input-->
               
+            <div class="task-input">
+              <img src="./assets/Images/calender.svg" width="20" height="20" alt="icon-calendar">
+              <input placeholder="Select when you'll be finished" id="task-date" type="date">
+              <p id="taskDateError" class="d-none errorMsg">Date cannot be empty or in the past</p>
+            </div>
+
+
           </section>
         </main>
     </div>
