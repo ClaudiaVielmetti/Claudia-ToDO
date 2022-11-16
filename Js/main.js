@@ -100,6 +100,10 @@ function showTodo(filter) {
 }
 showTodo("all");
 
+
+  
+
+
 // This function controls the small menu to edit/delete actions on tasks
 function showMenu(selectedTask) {
     let menuDiv = selectedTask.parentElement.lastElementChild;
