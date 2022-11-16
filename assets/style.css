@@ -38,12 +38,6 @@
     /* Footer height */
   }
   
-  footer {
-    background-color: #212529;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
   
   .text {
     color: white;
@@ -66,7 +60,7 @@
   
   ::selection {
     color: #fff;
-    background: #FFD700;
+    background: #ba27ce;
   }
   
   .wrapper {
@@ -107,7 +101,7 @@
     border-radius: 4px;
     letter-spacing: 0.3px;
     transition: transform 0.25s ease;
-    background: #e2b539;
+    background: #e409ad;
   }
   
   .task-input img {
@@ -129,7 +123,7 @@
   .task-input input:focus,
   .task-input input.active {
     padding-left: 52px;
-    border: 2px solid #e2b539;
+    border: 2px solid #e239bd;
   }
   
   .task-input input::placeholder {
@@ -160,13 +154,13 @@
   }
   
   .filters span.active {
-    color: #e2b63d;
+    color: #14b3be;
   }
   
   .controls .clear-btn {
     border: solid;
     outline: none;
-    color: #e4bc4c;
+    color: #14b3be;
     cursor: pointer;
     font-size: 13px;
     font-weight: 600;
@@ -236,7 +230,7 @@
   
   .task label input {
     margin-top: 7px;
-    accent-color: #e2b539;
+    accent-color:#14b3be;
   }
   
   .task label p {
