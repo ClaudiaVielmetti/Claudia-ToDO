@@ -39,8 +39,6 @@ body {
    
 }
   
-  
-  
 .errorMsg {
     margin-bottom: 0px;
     color: red;
@@ -50,7 +48,7 @@ body {
   
 ::selection {
     color: #fff;
-    background: #FFD700;
+    background: #8400ff;
 }
   
 .wrapper {
@@ -91,7 +89,7 @@ body {
     border-radius: 4px;
     letter-spacing: 0.3px;
     transition: transform 0.25s ease;
-    background: #e2b539;
+    background: #e239b8;
 }
   
 .task-input img {
@@ -113,7 +111,7 @@ body {
 .task-input input:focus,
 .task-input input.active {
     padding-left: 52px;
-    border: 2px solid #e2b539;
+    border: 2px solid #791869;
 }
   
 .task-input input::placeholder {
@@ -129,13 +127,13 @@ li {
   
 .controls {
     padding: 5px 50px 10px 50px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgb(85, 85, 85);
 }
   
 .filters span {
     margin: 0 8px;
     font-size: 17px;
-    color: #444444;
+    color: #181717;
     cursor: pointer;
 }
   
@@ -144,13 +142,14 @@ li {
 }
   
 .filters span.active {
-    color: #e2b63d;
+    color: #3db3e2;
 }
   
 .controls .clear-btn {
     border: solid;
     outline: none;
-    color: #e4bc4c;
+    color: #3db3e2;
+    color: ;
     cursor: pointer;
     font-size: 13px;
     font-weight: 600;
