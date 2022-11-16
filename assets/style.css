@@ -3,10 +3,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-  }
+}
 
   body {
-    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-image: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     background-size: 400% 500%;
     animation: gradient 10s ease infinite;
+ }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
   }
+  
