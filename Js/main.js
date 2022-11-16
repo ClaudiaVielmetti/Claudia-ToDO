@@ -111,6 +111,9 @@ function showMenu(selectedTask) {
     });
 }
 
+
+  
+
 // This function controls the status of a task - pending (un-checked, still in progress) or checked (completed) and saves to storage
 function updateStatus(selectedTask) {
     let taskName = selectedTask.parentElement.lastElementChild;
