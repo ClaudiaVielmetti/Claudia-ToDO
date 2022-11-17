@@ -102,7 +102,7 @@ function showTodo(filter) {
 showTodo("all");
 
 
-  
+
 
 
 // This function controls the small menu to edit/delete actions on tasks
@@ -117,7 +117,7 @@ function showMenu(selectedTask) {
 }
 
 
-  
+
 
 // This function controls the status of a task - pending (un-checked, still in progress) or checked (completed) and saves to storage
 function updateStatus(selectedTask) {
@@ -217,4 +217,4 @@ function createTask() {
 };
 
 
-  
+
