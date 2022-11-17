@@ -6,6 +6,7 @@ const filters = document.querySelectorAll(".filters span");
 const clearAll = document.querySelector(".clear-btn");
 const taskBox = document.querySelector(".task-box");
 const dateInput = document.getElementById("task-date");
+const sort =document.getElementById("sortTask")
 // --------------------------------------------------------------------------
 //                                  PRESENTATION
 // --------------------------------------------------------------------------
@@ -214,3 +215,6 @@ function createTask() {
     localStorage.setItem("todo-list", JSON.stringify(todos));
     showTodo(document.querySelector("span.active").id);
 };
+
+
+  
