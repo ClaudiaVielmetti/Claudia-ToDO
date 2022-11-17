@@ -214,11 +214,13 @@ li {
   width: 5px;
 }
 
+/*scrollable*/
 .task-box::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 25px;
 }
 
+/*draggable*/
 .task-box::-webkit-scrollbar-thumb {
   background: #e6e6e6;
   border-radius: 25px;
