@@ -1,3 +1,5 @@
+/*default margin and panning sizing*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,8 @@
   font-family: "Poppins", sans-serif;
 }
 
+/*Background color is a two color gradient
+It is also animated to go in a circle with different colors*/
 body {
   background: radial-gradient(
     circle,
@@ -18,6 +22,7 @@ body {
   animation: gradient 10s ease infinite;
 }
 
+/*BG animation*/
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -32,6 +37,7 @@ body {
   }
 }
 
+/*Heading style*/
 #navHeading {
   margin: 0 auto;
 }
@@ -49,13 +55,8 @@ body {
   color: white;
 }
 
-.redText {
-  color: red;
-}
 
-#githubIcon {
-  margin: 20px;
-}
+/*Error msg when fields are empty*/
 
 .errorMsg {
   margin-bottom: 0px;
@@ -64,11 +65,14 @@ body {
   font-size: 13px;
 }
 
+/*when highlighting*/
 ::selection {
   color: #fff;
   background: #ba27ce;
 }
 
+
+/*App styling*/
 .wrapper {
   max-width: 420px;
   padding: 28px 0 30px;
@@ -94,6 +98,7 @@ body {
   position: relative;
 }
 
+/*styling of add task button*/
 #submitButton {
   font-weight: 600;
   width: 100%;
@@ -109,7 +114,7 @@ body {
   transition: transform 0.25s ease;
   background: #e409ad;
 }
-
+/*Images for task input and dates. SVG's used*/
 .task-input img {
   top: 50%;
   position: absolute;
@@ -136,6 +141,8 @@ body {
   color: #bfbfbf;
 }
 
+
+/*controls for the different tasks (all pending and completed)*/
 .controls,
 li {
   display: flex;
@@ -163,6 +170,8 @@ li {
   color: #14b3be;
 }
 
+/*styling of the clear button*/
+
 .controls .clear-btn {
   border: solid;
   outline: none;
@@ -187,6 +196,8 @@ li {
   transform: scale(0.93);
 }
 
+
+/*Where the tasks are displayed*/
 .task-box {
   margin-top: 20px;
   margin-right: 5px;
@@ -198,6 +209,7 @@ li {
   max-height: 200px;
 }
 
+/*Scroll-bar added to see the bottoms of the list*/
 .task-box::-webkit-scrollbar {
   width: 5px;
 }
@@ -246,6 +258,7 @@ li {
   white-space: normal;
 }
 
+/*when task is completed and checked off*/
 .task label p.checked {
   text-decoration: line-through;
 }
@@ -259,6 +272,7 @@ li {
   cursor: pointer;
 }
 
+/*three dot menu for delete and edit*/
 .settings .task-menu {
   z-index: 10;
   right: -5px;
