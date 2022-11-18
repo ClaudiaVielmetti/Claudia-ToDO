@@ -157,6 +157,8 @@ clearAll.addEventListener("click", () => {
     todos.splice(0, todos.length);
     localStorage.setItem("todo-list", JSON.stringify(todos));
     showTodo()
+
+    
 });
 
 // Validation to check that something has been entered ini the fields, and applies classes that show and hide error text
@@ -217,7 +219,47 @@ function createTask() {
 };
 
 
-//Alphabetically sort
+//Alphabetically 
+
+const sortButton = document.querySelector('#sort-button');
+sortButton.addEventListener("click", function (e) {
+
+    // stop form from submitting 
+    e.preventDefault();
+
+    sortList();
+
+});
 
 
- 
+// Sort and Display function:
+function sortList() {
+
+    // clear all elements inside todoList element
+    todoList.innerHTML = "";
+
+    let todo = [];
+
+    if (localStorage.getItem("todo") === null) {
+        todo = [];
+    } else {
+        todo = JSON.parse(localStorage.getItem("todos"));
+    }
+
+    // sort function to sort array of primitive types
+    todo.sort();
+
+    //repopulate DOM with
+    // sorted data
+    todo.forEach(function (todo) {
+
+        const todoDiv = document.createElement("div");
+      
+    });
+
+   
+    todos = JSON.stringify(todos)
+    localStorage.setItem("todo-list", todo);
+
+
+}

@@ -83,7 +83,8 @@
                 <button id="submitButton" onclick="createTask()">
                   Add task!
                 </button>
-                <button id="sort-alpha" class="btn btn-info">Sort alphabetically</button>
+                <button type="submit" class="todo-button" onclick="sortList()">
+                  <i class="fa-solid fa-arrow-down-a-z"></i>
 
                 <!--These controls are used for the filters 
                         to see what still needs to be done and what has been completed-->
@@ -96,7 +97,7 @@
                 </div>
                 <button class="clear-btn">Clear All</button>
               </div>
-              <ul class="task-box"></ul>
+              <ul class="task-box" id="todoSort"></ul>
             </div>
             <!-- App area END -->
           </section>
