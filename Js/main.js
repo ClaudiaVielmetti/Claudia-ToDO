@@ -158,7 +158,7 @@ clearAll.addEventListener("click", () => {
     localStorage.setItem("todo-list", JSON.stringify(todos));
     showTodo()
 
-    
+
 });
 
 // Validation to check that something has been entered ini the fields, and applies classes that show and hide error text
@@ -251,14 +251,14 @@ function sortList() {
 
     //repopulate DOM with
     // sorted data
-    todo.forEach(function (todo) {
+    todo.forEach(function (todoList) {
 
-        const todoDiv = document.createElement("div");
+        const todoSort = document.createElement("ul");
       
     });
 
    
-    todos = JSON.stringify(todos)
+    todo = JSON.stringify(todo)
     localStorage.setItem("todo-list", todo);
 
 
