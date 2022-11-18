@@ -219,17 +219,5 @@ function createTask() {
 
 //Alphabetically sort
 
-document.getElementById('sort-alpha').addEventListener('click', function() {
-    taskText.todo.sort(function(a, b) {
-      var textOnlyA = a.textOnly.toUpperCase(); // ignore upper and lowercase
-      var textOnlyB = b.textOnly.toUpperCase(); // ignore upper and lowercase
-      if (textOnlyA < textOnlyB) {
-        return -1;
-      }
-      if (textOnlyA > textOnlyB) {
-        return 1;
-      }
-      // names must be equal
-      return 0;
-    });
-  });
+
+ 
