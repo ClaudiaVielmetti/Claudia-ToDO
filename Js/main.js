@@ -105,19 +105,6 @@ showTodo("all");
 
 
 
-// This function controls the small menu to edit/delete actions on tasks
-function showMenu(selectedTask) {
-    let menuDiv = selectedTask.parentElement.lastElementChild;
-    menuDiv.classList.add("show");
-    document.addEventListener("click", e => {
-        if (e.target.tagName != "I" || e.target != selectedTask) {
-            menuDiv.classList.remove("show");
-        }
-    });
-}
-
-
-
 
 // This function controls the status of a task - pending (un-checked, still in progress) or checked (completed) and saves to storage
 function updateStatus(selectedTask) {
@@ -160,6 +147,19 @@ clearAll.addEventListener("click", () => {
 
 
 });
+
+
+// This function controls the small menu to edit/delete actions on tasks
+function showMenu(selectedTask) {
+    let menuDiv = selectedTask.parentElement.lastElementChild;
+    menuDiv.classList.add("show");
+    document.addEventListener("click", e => {
+        if (e.target.tagName != "I" || e.target != selectedTask) {
+            menuDiv.classList.remove("show");
+        }
+    });
+}
+
 
 // Validation to check that something has been entered ini the fields, and applies classes that show and hide error text
 function checkValidation(taskText, taskDate) {
