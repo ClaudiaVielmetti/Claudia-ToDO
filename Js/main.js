@@ -7,6 +7,7 @@ const clearAll = document.querySelector(".clear-btn");
 const taskBox = document.querySelector(".task-box");
 const dateInput = document.getElementById("task-date");
 
+
 // --------------------------------------------------------------------------
 //                                  PRESENTATION
 // --------------------------------------------------------------------------
@@ -147,6 +148,7 @@ clearAll.addEventListener("click", () => {
 
 
 });
+
 
 
 // This function controls the small menu to edit/delete actions on tasks
