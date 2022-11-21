@@ -181,7 +181,6 @@ li {
   border: solid;
   outline: none;
   color: #14b3be;
-  cursor: pointer;
   font-size: 13px;
   font-weight: 600;
   padding: 5px 11px;
@@ -190,16 +189,19 @@ li {
   pointer-events: none;
   transition: transform 0.25s ease;
   background: white;
+  cursor: pointer;
 }
 
 .clear-btn.active {
   opacity: 0.9;
   pointer-events: auto;
+
 }
 
 .clear-btn:active {
   transform: scale(0.93);
 }
+
 
 /*Where the tasks are displayed*/
 
