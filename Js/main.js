@@ -70,6 +70,20 @@ filters.forEach(btn => {
 function showTodo(filter) {
     let liTag = "";
     if (todos) {
+
+        todos = todos.sort(function (a, b) {
+            let todoA = a.name.toLowerCase();
+                let todoB = b.name.toLowerCase();
+            if (todoA < todoB) {
+                return -1;
+            } else if (todoA > todoB) {
+                return 1;
+            }
+            return 0;
+        });
+
+
+
         todos.forEach((todo, id) => {
             let completed = todo.status == "completed" ? "checked" : "";
             let dueDateClass = "";
