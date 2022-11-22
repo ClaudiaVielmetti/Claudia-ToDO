@@ -71,6 +71,8 @@ function showTodo(filter) {
     let liTag = "";
     if (todos) {
 
+        //Sort list alphabetically - it wil sort automatically thats why there is no click function
+
         todos = todos.sort(function (a, b) {
             let todoA = a.name.toLowerCase();
                 let todoB = b.name.toLowerCase();
